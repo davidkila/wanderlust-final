@@ -1,0 +1,219 @@
+/* -------------------- IMPORTED FONTS -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
+
+/* -------------------- CSS RESET -------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------------- ROOT VARIABLES -------------------- */
+:root {
+  font-family:"Monserrat", sans-serif;
+  --yellow:#f6d64a;
+  --teal:#55bcd5;
+  --purple:#9b26b0;
+  --blue:#499bd2;
+  --dark-gray:#222222;
+  --light-gray:#eaeaea;
+  --white:#ffffff;
+  --black:#000000;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+html {
+  background-color:var(--white);
+}
+
+body {
+  min-width:320px;
+  grid-template-columns:repeat(2,1fr);
+}
+
+main {
+  background-color:var(--white);
+  grid-template-columns:1fr;
+}
+
+h4 {
+  text-transform:uppercase;
+  font-weight:bold;
+}
+header {
+  display:flex;
+  flex-direction:column;
+  background-color:var(--teal);
+  color:var(--dark-gray);
+  text-align:center;
+}
+
+header p {
+  font-size:2em;
+  text-align:center;
+}
+
+footer {
+  display:flex;
+  flex-direction:column;
+  background-color:var(--light-gray);
+  text-align:center;
+  padding-top:20px;
+}
+
+footer a {
+  color:var(--black);
+  font-size:1.1em;
+  text-align:center;
+  text-decoration:none;
+  margin:0 auto;
+  margin-top:0.25em;
+  
+}
+
+ul {
+  display:flex;
+  flex-direction:column;
+    text-transform:upppercase;
+}
+
+nav {
+  
+}
+
+h2 ~ label {
+  display:flex;
+  flex-direction:column;
+  background-color:var(--dark-gray);
+  color:var(--white);
+  text-transform:uppercase;
+  text-align:center;
+  padding-top:3em;
+  padding-bottom:3em;
+
+}
+
+nav ul a {
+  display:flex;
+  flex-direction:column;
+  background-color:var(--teal);
+  border:solid black 25px;
+  color:var(--black);
+  font-size:1.1em;
+  width:10em;
+  text-align:center;
+  text-decoration:none;
+  border-radius:5px;
+  border:2.5px solud var(--white);
+  margin:0 auto;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+nav li {
+  border-top:solid black 1px;
+  padding-top:5em;
+  padding-bottom:5em;
+}
+
+h1, h2, h3 {
+  font-family:"Molle";
+  font-size:5em;
+  margin-top:0.5em;
+  margin-bottom:0.25em;
+}
+
+p {
+  text-align:center;
+}
+
+.sr-only {
+  
+}
+
+h4, p, q, small, nav, button, form {
+  font-family:"Montserrat";
+}
+
+#plan {
+  background-color:var(--yellow);
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  margin:0 auto;
+  margin-top:1em;
+  margin-bottom:1em;
+  
+}
+
+#testimonials {
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+}
+
+#contact {
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+}
+
+#about {
+  background-color:var(--blue);
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  margin:0 auto;
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+form {
+  
+}
